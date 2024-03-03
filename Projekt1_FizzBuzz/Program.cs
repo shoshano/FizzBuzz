@@ -8,6 +8,7 @@ namespace Projekt1_FizzBuzz
         {
             Console.WriteLine("Podaj gorny zakres: ");
             int number = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
             FizzBuzz_game mygame = new FizzBuzz_game(number);
         }
     }

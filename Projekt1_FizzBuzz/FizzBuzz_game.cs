@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Projekt1_FizzBuzz
 {
     internal class FizzBuzz_game
     {
-        public int upper_range;
+        public int upper_range;     // górny zakres podany przez użytkownika
+
+        // Konstruktor
         public FizzBuzz_game(int ur) 
         {
             upper_range = ur;
             print_results();
         }
 
+        // Sprawdza czy liczba jest podzielna przez 3, 5 lub 15
         public string result(int x)
         {
             string answer = "";
@@ -32,7 +31,9 @@ namespace Projekt1_FizzBuzz
             }
             return answer;
         }
-        public void print_results()
+
+        // Wyświetla rezultaty 
+        public void print_results() 
         {
             for (int i = 1; i < upper_range + 1; i++)
             {
